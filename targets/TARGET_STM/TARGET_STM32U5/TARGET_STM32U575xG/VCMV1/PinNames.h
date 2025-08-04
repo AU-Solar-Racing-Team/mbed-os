@@ -226,13 +226,14 @@ typedef enum {
 #ifdef MBED_CONF_TARGET_STDIO_UART_TX
   CONSOLE_TX = MBED_CONF_TARGET_STDIO_UART_TX,
 #else
-  CONSOLE_TX = PA_9,
+  CONSOLE_TX = PB_6,
 #endif
 #ifdef MBED_CONF_TARGET_STDIO_UART_RX
   CONSOLE_RX = MBED_CONF_TARGET_STDIO_UART_RX,
 #else
-  CONSOLE_RX = PA_10,
+  CONSOLE_RX = PB_7,
 #endif
+  // STDIO for console print
 
   /**** USB FS pins ****/
   USB_OTG_FS_DM = PA_11,
@@ -309,23 +310,10 @@ typedef enum {
 #define LED4 PD_9
 #define LED5 PD_8
 
-#define BTN1 PC_6
-#define BTN2 PC_7
-#define BTN3 PC_8
-#define BTN4 PC_9
-#define BTN5 PA_8
-#define BTN6 PA_9
-#define BTN7 PC_10
-#define BTN8 PC_11
-
-#define BTN9 PB_1
-#define BTN10 PB_2
-#define BTN11 PE_7
-#define BTN12 PE_8
-#define BTN13 PE_9
-#define BTN14 PE_10
-#define BTN15 PE_11
-#define BTN16 PE_12
+#define BTN1 PC_12
+#define BTN2 PC_11
+#define BTN3 PC_10
+#define BTN4 PA_15
 
 #ifdef __cplusplus
 }
